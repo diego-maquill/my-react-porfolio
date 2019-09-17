@@ -1,11 +1,5 @@
 # React-Portfolio App
 
-  
-
-Personal portfolio page [www.fdaviz.com](https://www.fdaviz.com/) built in React.
-
-  
-
 ## Building Process
 
 1. Installed [New React App](https://reactjs.org/docs/create-a-new-react-app.html) using Node JS.
