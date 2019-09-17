@@ -39,7 +39,7 @@ export default class Projects extends React.Component {
 								}>
 								<div className="overlay">
 									<div className="text">
-										<h2>Agua De Luz</h2>
+										<h2>Fast and FastandFresh</h2>
 									</div>
 									<div>
 										<a href="https://pure-ocean-69179.herokuapp.com/" class="test2">Learn More</a>
