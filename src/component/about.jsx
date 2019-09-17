@@ -3,7 +3,7 @@ import layers from "../img/layers.png";
 import cogwheel from "../img/cogwheel.png";
 import pen from "../img/pen.png";
 import browser from "../img/browser.png";
-import myImage from "../img/myImage.png";
+import myImage from "../img/myImage.jpg";
 import PropTypes from "prop-types";
 
 export default class About extends React.Component {
@@ -20,28 +20,28 @@ export default class About extends React.Component {
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
-						<img src={layers} alt=""/>
+						<img src={layers} alt="" />
 						<h4>Responsive</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
-						<img src={pen} alt=""/>
+						<img src={pen} alt="" />
 						<h4>Design</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
-						<img src={cogwheel} alt=""/>
+						<img src={cogwheel} alt="" />
 						<h4>Performance</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
-						<img src={browser} alt=""/>
+						<img src={browser} alt="" />
 						<h4>Agile</h4>
 					</div>
 				</div>
@@ -59,9 +59,8 @@ export default class About extends React.Component {
 							}}
 						/>
 						<p className={"mytext pt-3 " + this.props.fadeIn}>
-							I love to transform ideas into reality using code. I
-							am passionate about using Javascript and animations
-							to create awesome user experiences.
+							I love transforming ideas into reality using code. I
+							am passionate about real live problem solving in friendly and creative way.
 						</p>
 					</div>
 					<div
@@ -86,7 +85,7 @@ export default class About extends React.Component {
 								style={{ width: 80 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								CSS3
+								CSS
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -106,7 +105,7 @@ export default class About extends React.Component {
 								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								PHP
+								APIs
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -126,7 +125,7 @@ export default class About extends React.Component {
 								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								NodeJs
+								NodeJS
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -136,7 +135,7 @@ export default class About extends React.Component {
 								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								SASS
+								SQL
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -146,7 +145,7 @@ export default class About extends React.Component {
 								style={{ width: 80 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								VanillaJS
+								MongoDb
 							</div>
 						</div>
 						<div className="progress mb-3">

@@ -1,8 +1,9 @@
 import React from "react";
-import Vmarine from "../img/Vmarine.jpg";
-import aguaDeLuz from "../img/aguaDeLuz.png";
-import todo from "../img/todolist.png";
+import Vmarine from "../img/NuBie.png";
+import aguaDeLuz from "../img/FastandFresh.png";
+//import todo from "../img/todolist.png";
 import PropTypes from "prop-types";
+
 
 export default class Projects extends React.Component {
 
@@ -19,100 +20,42 @@ export default class Projects extends React.Component {
 						<div className="row my-5">
 							<div
 								className={
-									"testbg col-12 col-sm-12 col-md-4 " +
+									"testbg col-12 col-sm-12 col-md-6 " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
 									<div className="text">
-										<h2>VMarine</h2>
+										<h2>Nubie</h2>
 									</div>
 									<div>
-										<button
-											id="vmarine-button"
-											className="project-button"
-											onClick={() => {
-												var modalBG = document.getElementById(
-													"gallery-card"
-												);
-												var marineModal = document.getElementById(
-													"vmarine"
-												);
-												modalBG.style.display = "block";
-												marineModal.style.display =
-													"block";
-											}}>
-											Learn More
-										</button>
+										<a href="https://project1-nubie.herokuapp.com" class="test1">Learn More</a>
 									</div>
 								</div>
 							</div>
 							<div
 								className={
-									"aguabg col-12 col-sm-12 col-md-4 " +
+									"aguabg col-12 col-sm-12 col-md-6 " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
 									<div className="text">
-										<h2>Aguas De Luz</h2>
+										<h2>Agua De Luz</h2>
 									</div>
 									<div>
-										<button
-											id="agua-button"
-											className="project-button"
-											onClick={() => {
-												var modalBG = document.getElementById(
-													"gallery-card"
-												);
-												var aguaModal = document.getElementById(
-													"agualuz"
-												);
-												modalBG.style.display = "block";
-												aguaModal.style.display =
-													"block";
-											}}>
-											Learn More
-										</button>
+										<a href="https://pure-ocean-69179.herokuapp.com/" class="test2">Learn More</a>
 									</div>
 								</div>
 							</div>
-							<div
-								className={
-									"todobg col-12 col-sm-12 col-md-4 " +
-									this.props.fadeIn
-								}>
-								<div className="overlay">
-									<div className="text">
-										<h2>To Do List</h2>
-									</div>
-									<div>
-										<button
-											id="todo-button"
-											className="project-button"
-											onClick={() => {
-												var modalBG = document.getElementById(
-													"gallery-card"
-												);
-												var todoModal = document.getElementById(
-													"todolist"
-												);
-												modalBG.style.display = "block";
-												todoModal.style.display =
-													"block";
-											}}>
-											Learn More
-										</button>
-									</div>
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
 
 				{/*hidden modals*/}
-				<div id="gallery-card">
+				{/* <div id="gallery-card">
 					<div id="vmarine" className="modal-card">
 						<div className="visual">
-							<img src={Vmarine} alt=""/>
+							<img src={Vmarine} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>Vmarine</h2>
@@ -157,7 +100,7 @@ export default class Projects extends React.Component {
 
 					<div id="agualuz" className="modal-card">
 						<div className="visual">
-							<img src={aguaDeLuz} alt=""/>
+							<img src={aguaDeLuz} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>Agua De Luz</h2>
@@ -207,7 +150,7 @@ export default class Projects extends React.Component {
 
 					<div id="todolist" className="modal-card">
 						<div className="visual">
-							<img src={todo} alt=""/>
+							<img src={todo} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>To-Do List</h2>
@@ -249,7 +192,7 @@ export default class Projects extends React.Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</React.Fragment>
 		);
 	}

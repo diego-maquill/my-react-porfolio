@@ -66,7 +66,7 @@ class Navbar extends React.Component {
 									behavior: "smooth"
 								});
 							}}>
-							Back to Space
+							Diego Maquill
 						</a>
 						<button
 							className="navbar-toggler"
