@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
 							Projects
 						</h1>
 						<div className="row my-5">
-							<div class="col-12 col-sm-12 col-md-6 ">
+							<div class="col-12 col-sm-12 col-md-4 ">
 								<a href="https://project1-nubie.herokuapp.com">
 									<div
 										className={
@@ -27,11 +27,20 @@ export default class Projects extends React.Component {
 									</div>
 								</a>
 							</div>
-							<div class="col-12 col-sm-12 col-md-6 ">
+							<div class="col-12 col-sm-12 col-md-4 ">
 								<a href="https://pure-ocean-69179.herokuapp.com">
 									<div
 										className={
 											"aguabg"
+										}>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-sm-12 col-md-4 ">
+								<a href="https://diego-maquill.github.io/portafolio.html">
+									<div
+										className={
+											"todobg"
 										}>
 									</div>
 								</a>
