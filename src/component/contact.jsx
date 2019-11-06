@@ -5,6 +5,10 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<div id="my-contact" className="container text-center my-5">
+				<h2>😄 email me to: diego.maquill@gmail.com </h2>
+				<h2>or </h2>
+				<h2>complete the form below to reach me</h2>
+				<h2>Thank you!</h2>
 				<h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
 					Contact
 				</h1>
