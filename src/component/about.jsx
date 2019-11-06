@@ -72,7 +72,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								HTML5
@@ -82,7 +82,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								CSS
@@ -92,7 +92,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-90-bar"
 								role="progressbar"
-								style={{ width: 90 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								Javascript
@@ -102,7 +102,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								APIs
@@ -112,7 +112,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								ReactJS
@@ -122,7 +122,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								NodeJS
@@ -132,7 +132,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								SQL
@@ -142,7 +142,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								MongoDb
@@ -152,7 +152,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								JQuery
