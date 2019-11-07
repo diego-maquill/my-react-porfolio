@@ -17,15 +17,17 @@ export default class Background extends React.Component {
 				<div id="stars3" />
 				<div className="top-container flex">
 					<h1>Welcome </h1>
-					<br />
+				
 					<h1>to</h1>
-					<br />
+					
 					<h1>Diego Maquill Portfolio.</h1>
 					<br />
 					<h1>Full Stack Developer </h1>
 					<br />
 					<p className="intro-subtitle"><span className="text-slider-items">
-					</span><strong className="text-slider"><Typed strings={['From', 'Harvard Extension School', 'in partnership with', 'Trilogy Education', 'BS from Suffolk University']} typeSpeed={80} backDelay={1100} backSpeed={30} loop /></strong></p>
+					</span><strong className="text-slider"><Typed strings={['Thanks to', 'and in partnership with']} typeSpeed={150} backDelay={1100} backSpeed={150} loop /></strong></p>
+					<p className="intro-subtitle"><span className="text-slider-items">
+					</span><strong className="text-slider"><Typed strings={['From', 'Harvard Extension School','Trilogy Education', 'BS from Suffolk University']} typeSpeed={80} backDelay={1100} backSpeed={30} loop /></strong></p>
 					{/* offset can be cahnged in node modules wowjs default file */}
 					<button
 						className={"work-button " + this.props.bounceIn}
