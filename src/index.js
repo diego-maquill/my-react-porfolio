@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import './component/navbar.scss';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 //adding my imports
-import Navbar from "./component/navbar.jsx";
+import App from "./component/app.jsx";
 import Footer from "./component/footer.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styles/index.scss";
 
 ReactDOM.render(
 	<React.Fragment>
-		<Navbar />
+		<App />
 		<Footer />
 	</React.Fragment>, document.getElementById('root'));
 
