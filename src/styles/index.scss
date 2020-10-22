@@ -10,9 +10,6 @@ p {
 
 }
 
-/////
-
-/////
 
 #footer {
     background-color: #061b3d;
@@ -33,17 +30,7 @@ p {
   to   { top: 0; }
 }
 
-.fade-in-nav {
-    animation: move 1s alternate;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-}
-.fade-in-nav + .content-containers {
-    padding-top: 60px;
-}
+
 
 .progress {
     height: 1.5rem;
