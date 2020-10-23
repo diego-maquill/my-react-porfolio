@@ -11,21 +11,21 @@ class Footer extends React.Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-sm-12 col-md-8 mx-auto">
-							<a
+							{/* <a
 								href=""
 								target="_blank"
 								rel="noopener noreferrer">
 								<img className="img-fluid" src={codepen} alt="" />
-							</a>
+							</a> */}
 							<a
 								className="px-3"
-								href=""
+								href="https://github.com/diego-maquill"
 								target="_blank"
 								rel="noopener noreferrer">
 								<img src={github} alt="" />
 							</a>
 							<a
-								href=""
+								href="https://www.linkedin.com/in/diego-m-24b4a8115/"
 								target="_blank"
 								rel="noopener noreferrer">
 								<img src={linkedin} alt="" />

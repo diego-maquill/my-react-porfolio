@@ -2,7 +2,7 @@
 
 ## Building Process
 
-Deployed in Heroku https://my-portafolio-react.herokuapp.com/
+Deployed in Heroku https://dmaquill-react-portfolio.herokuapp.com/
 
 1. Installed [New React App](https://reactjs.org/docs/create-a-new-react-app.html) using Node JS.
 
