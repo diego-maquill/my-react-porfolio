@@ -25,11 +25,11 @@ class Welcome extends React.Component {
 					</div>
 					<div className="typing-section">
 						<p className="intro-subtitle"><span className="text-slider-items">
-						</span><strong className="text-slider"><Typed strings={['BS in Computer Science', '&&&', ' Full Stack Developer Certificate', '&&&']} typeSpeed={80} backDelay={1100} backSpeed={30} loop /></strong></p>
+						</span><strong className="text-slider"><Typed strings={['BS in Computer Science', '&', ' Full Stack Developer Certificate', '&']} typeSpeed={120} backDelay={1100} backSpeed={120} loop /></strong></p>
 						<p className="intro-subtitle"><span className="text-slider-items">
 						</span><strong className="text-slider">From</strong></p>
 						<p className="intro-subtitle"><span className="text-slider-items">
-						</span><strong className="text-slider"><Typed strings={['Suffolk University', '&', 'Harvard Extension School Trilogy Education', '&&']} typeSpeed={80} backDelay={1100} backSpeed={30} loop /></strong></p>
+						</span><strong className="text-slider"><Typed strings={['Suffolk University', '&', 'Harvard Extension School Trilogy Education', '&']} typeSpeed={110} backDelay={1100} backSpeed={110} loop /></strong></p>
 					</div>
 					{/* offset can be changed in node modules wowjs default file */}
 					<div>

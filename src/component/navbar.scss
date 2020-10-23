@@ -74,14 +74,26 @@
   }
    .nav-menu.active {    
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-    margin-right: 100px;
+    padding-left: 0;
+    width:150px;
+    margin-right: 0;
     grid-gap: 5px;
     right: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    /* text-align: left; */
   }
-  
+  .menu-icon {
+    color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-150%, 27%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
   .nav-links {
     font-size: 16px;
     text-align: left;
@@ -101,16 +113,7 @@
     transform: translate(25%, 50%);
   }
 
-  .menu-icon {
-    color: rgb(255, 255, 255);
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 27%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+ 
 
   .fa-times {
     color: rgb(255, 255, 255);
