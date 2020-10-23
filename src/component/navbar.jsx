@@ -1,12 +1,19 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Container, Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import Pdf from "../data/resume.pdf";
 import WOW from "wowjs";
 import "./navbar.scss";
 
-class Navbar extends React.Component {
+class Header extends React.Component {
 
     state = { clicked: false }
+
+    state = { isOpen: false }
+
+    toggleNavbar = () => {
+        this.setState({ isOpen: !this.state.isOpen })
+    }
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
@@ -22,41 +29,52 @@ class Navbar extends React.Component {
         new WOW.WOW().init();
     }
 
-    headerEffectLargeScreen() {
-        window.addEventListener("scroll", () => {
-            var fadeInEffect = document.getElementById("navbar");
-            var domRect = fadeInEffect.getBoundingClientRect();
-            var fadeOutEffect = document.getElementById("navbar");
-            var domBGRect = fadeOutEffect.getBoundingClientRect();
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggleNavbar.bind(this);
 
-            if (domRect.y <= -domRect.height) {
-                fadeInEffect.classList.add("fade-in-nav");
+        // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+        if (typeof window !== 'undefined') {
+            let prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                const maxScroll = document.body.clientHeight - window.innerHeight;
+                let currentScrollPos = window.pageYOffset;
+                if (
+                    (maxScroll > 0 && prevScrollpos > currentScrollPos && prevScrollpos <= maxScroll)
+                    || (maxScroll <= 0 && prevScrollpos > currentScrollPos)
+                    || (prevScrollpos <= 0 && currentScrollPos <= 0)
+                ) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-5.0rem"; // adjustable based your need
+                }
+                prevScrollpos = currentScrollPos;
             }
-            if (-domBGRect.height < domBGRect.top) {
-                fadeInEffect.classList.remove("fade-in-nav");
-            }
-        });
+        }
     }
-    /*   headerEffectSmallScreen() {
-          window.addEventListener("scroll", () => {
-              var fadeInEffect = document.getElementById("reduceScreen");
-              var domRect = fadeInEffect.getBoundingClientRect();
-              var fadeOutEffect = document.getElementById("reduceScreen");
-              var domBGRect = fadeOutEffect.getBoundingClientRect();
-  
-              if (domRect.y <= -domRect.height) {
-                  fadeInEffect.classList.add("fade-in-nav");
-              }
-              if (-domBGRect.height < domBGRect.top) {
-                  fadeInEffect.classList.remove("fade-in-nav");
-              }
-          });
-      } */
+
+
+    /*  headerEffectLargeScreen() {
+         window.addEventListener("scroll", () => {
+             var fadeInEffect = document.getElementById("navbar");
+             var domRect = fadeInEffect.getBoundingClientRect();
+             var fadeOutEffect = document.getElementById("navbar");
+             var domBGRect = fadeOutEffect.getBoundingClientRect();
+ 
+             if (domRect.y <= -domRect.height) {
+                 fadeInEffect.classList.add("fade-in-nav");
+             }
+             if (-domBGRect.height < domBGRect.top) {
+                 fadeInEffect.classList.remove("fade-in-nav");
+             }
+         });
+     } */
+
 
     render() {
         return (
             <div>
-                <nav id="navbar" className="navbar navbar-expand-lg" ref={this.headerEffectLargeScreen}>
+                <Navbar id="navbar" expand="md" fixed="top">
                     <div className="container" >
                         <div>
                             <a className="navbar-brand" /* className="home-style navbar-brand" */
@@ -122,9 +140,9 @@ class Navbar extends React.Component {
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </Navbar>
             </div>
         );
     }
 }
-export default Navbar;
+export default Header;

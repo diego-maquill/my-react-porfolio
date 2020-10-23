@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from "react";
 /* import "./navbar.css"; */
-import Navbar from "./navbar.jsx";
+import Header from "./navbar.jsx";
 import Welcome from "./welcome.jsx";
 import About from "./about.jsx";
 import Projects from "./projects.jsx";
@@ -35,7 +35,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar />
+				<Header />
 				<Welcome
 					id="my-background"
 					aboutRef={this.about}

@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import App from "./component/app.jsx";
 import Footer from "./component/footer.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/index.scss";
 
 ReactDOM.render(
